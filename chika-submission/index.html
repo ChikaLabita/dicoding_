@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"></script>
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="#home" class="a">My Portfolio</a>
+      <nav class="nav-list">
+        <ul>
+          <li>
+            <a href="#home"
+              ><i class="fa fa-home" aria-hidden="true"></i> HOME</a
+            >
+          </li>
+          <li>
+            <a href="#about-me"
+              ><i class="fa fa-user-circle" aria-hidden="true"></i> ABOUT ME</a
+            >
+          </li>
+          <li>
+            <a href="#project"
+              ><i class="fas fa-project-diagram" aria-hidden="true"></i>
+              PROJECT</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article class="article-a colart-1 article-left" id="home">
+        <h3>Hi, There</h3>
+        <h1>I'm Chika Labita</h1>
+        <p>
+          a <strong> full-stack developer</strong> based in Pasuruan Regerency,
+          Indonesia.
+        </p>
+      </article>
+      <article class="article-a colart-2 article-left" id="about-me">
+        <div class="about-me">
+          <h2>About Me</h2>
+          <p>
+            As a graduate in the field of information technology, especially
+            informatics engineering, I have the ability to build a website with
+            or without using a framework, manage databases, I have the ability
+            to design things like pamphlets, Instagram feeds, etc. I am a person
+            who likes to learn and is thirsty for knowledge and experience,
+            always trying to do this and do that, likes challenges, easily
+            adapts to new environments, I can work as a team or individually.
+          </p>
+        </div>
+
+        <div class="more-about">
+          <div class="h2-more">Work Experiences</div>
+          <div class="experience">
+            <div class="my-experiences">
+              <div class="h2">Private Teacher</div>
+              <div class="h3">Self-Employed</div>
+              <div class="duration">Nov 2023 - Now</div>
+              <div class="desc">
+                Teach programming languages (HTML, CSS, Javascript, Python and
+                C++) ​​to high school students
+              </div>
+            </div>
+            <div class="my-experiences">
+              <div class="h2">Web Developer</div>
+              <div class="h3">
+                Department of Population and Civil Registration of Malang City.
+              </div>
+              <div class="duration">Jul 2022 - Dec 2022</div>
+              <div class="desc">
+                <ul>
+                  <li>
+                    Creating the design for the Dukcapil Museum in Malang City
+                  </li>
+                  <li>Creating a 4x1 banner design</li>
+                  <li>
+                    Developing a web-based Information System for Reporting
+                    Identity Card Printing
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="my-experiences">
+              <div class="h2">Customer Service</div>
+              <div class="h3">Glamour Pandaan Photo Studio</div>
+              <div class="duration">2018</div>
+              <div class="desc">
+                <ul>
+                  <li>Providing excellent customer service and satisfaction</li>
+                  <li>Maintaining good communication with customers</li>
+                  <li>Operating a DSLR Camera</li>
+                  <li>
+                    Performing photo editing tasks (such a changing backgrounds,
+                    burning etc) using Adobe Photoshop
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="h2-more">Skills</div>
+          <div class="filter-myskill">
+            <button onclick="filter_MySkills('all')">All</button>
+            <button onclick="filter_MySkills('hard-skill')">Hardskill</button>
+            <button onclick="filter_MySkills('soft-skill')">Softskill</button>
+          </div>
+          <div class="my-skill">
+            <div class="my-skill-cards"></div>
+          </div>
+          <div class="h2-more">Education & Training</div>
+          <div class="edutra">
+            <div class="my-edutra-cards"></div>
+          </div>
+          <div class="h2-more">Organization</div>
+          <div class="organization">
+            <div class="my-organization"></div>
+          </div>
+        </div>
+      </article>
+      <article class="article-a colart-1 article-left" id="project">
+        <h3>My Project</h3>
+        <select id="myPro">
+          <option value="all">All</option>
+          <option value="my-development">Development</option>
+          <option value="my-design">Design</option>
+          <option value="my-photo">Photograph</option>
+        </select>
+        <div class="my-projects" id="myproject"></div>
+        <script src="js/script.js"></script>
+      </article>
+      <aside class="s-aside">
+        <div class="aside-card">
+          <img src="assets/image/aku.png" />
+          <h3>Chika Labita S.Tr.Kom</h3>
+          <p>
+            <i class="fa fa-map-marker" aria-hidden="true"></i> Pasuruan
+            Regerency, IDN<iconify-icon
+              icon="twemoji:flag-indonesia"
+            ></iconify-icon>
+          </p>
+          <table class="my-bio">
+            <tbody>
+              <tr>
+                <td>Place, Date of Birth</td>
+                <td>Tasikmalaya, January 12, 2000</td>
+              </tr>
+              <tr>
+                <td>Gender</td>
+                <td>Female</td>
+              </tr>
+              <tr>
+                <td>Blood Type</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>Contact</td>
+                <td>
+                  <a
+                    href="https://www.linkedin.com/in/chikalabita/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://www.tiktok.com/@inniakhafullah_/"
+                    target="_blank"
+                    ><i class="fab fa-tiktok"></i
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/glxssyimisyour/"
+                    target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <p>All Right Reserved &copy;2024</p>
+    </footer>
+  </body>
+</html>
